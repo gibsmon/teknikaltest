@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.fragment.Account">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.danstest.ui.home.MainHomeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="Ginanjar Setiawan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_marginTop="100px"
+                android:text="LOGOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

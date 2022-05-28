@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.detail_position.DetailRecruitment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.danstest.ui.detail_position.DetailRecruitMentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:padding="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/imageCompany"
+                        app:setImage="@{viewModel.rcItem.company_logo}"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <TextView
+                        android:text="@{viewModel.rcItem.title}"
+                        android:id="@+id/title"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        tools:text="Testing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="@{viewModel.rcItem.company}"
+                        android:id="@+id/company"
+                        android:layout_marginTop="10dp"
+                        tools:text="Testing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="@{viewModel.rcItem.location}"
+                        android:id="@+id/location"
+                        tools:text="Testing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="10px"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Job Specificaiton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:padding="20dp"
+            android:layout_marginTop="10px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10px"
+                    android:text="Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+
+                    android:text="@{viewModel.rcItem.title}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10px"
+                    android:text="Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@{viewModel.rcItem.location}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10px"
+                    android:text="Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    app:setHTML="@{viewModel.rcItem.description}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

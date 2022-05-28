@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/activity_detail_recruitment.xml" value="0.2037914691943128" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/activity_main_home.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.26136779785156244" />
+        <entry key="app/src/main/res/layout/item_loading.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/layout_list_recruitment.xml" value="0.2256668090820312" />
+        <entry key="app/src/main/res/layout/loading.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/menu/buttom_menu.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

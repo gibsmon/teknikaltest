@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <data>
+        <variable
+            name="data"
+            type="com.example.danstest.data.dto.recruitment.RecruitmentResponseItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layoutMain"
+        android:padding="20dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imageCompany"
+                    app:setImage="@{data.company_logo}"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <TextView
+                    android:text="@{data.title}"
+                    android:id="@+id/title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    tools:text="Testing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@{data.company}"
+                    android:id="@+id/company"
+                    android:layout_marginTop="10dp"
+                    tools:text="Testing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@{data.location}"
+                    android:id="@+id/location"
+                    tools:text="Testing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
